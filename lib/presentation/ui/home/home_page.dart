@@ -22,7 +22,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text("Welcome ${widget.title}"),
       ),
       body: Center(
         child: Column(
