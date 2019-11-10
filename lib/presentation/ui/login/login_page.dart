@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_modular_app/managers/server_manager.dart';
 import 'package:flutter_modular_app/presentation/navigation/navigation.dart';
 
 class LoginPage extends StatefulWidget {
@@ -54,7 +55,8 @@ class _LoginPageState extends State<LoginPage> {
                         "GO TO HOME",
                         style: TextStyle(color: Colors.white),
                       ),
-                      onPressed: () => navigateToHome(context, _emailTextController.text),
+                      onPressed: () =>
+                          navigateToHome(context, _login()),
                     ),
                   ),
                 ),
@@ -64,5 +66,10 @@ class _LoginPageState extends State<LoginPage> {
         ),
       ),
     );
+  }
+
+  String _login() {
+    return ServerManager.instance
+        .login(_emailTextController.text, _passwordTextController.text);
   }
 }
