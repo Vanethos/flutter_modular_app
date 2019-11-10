@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_modular_app/managers/server_manager.dart';
 import 'package:flutter_modular_app/presentation/navigation/navigation.dart';
+import 'package:example_login/example_login.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -69,7 +69,7 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   String _login() {
-    return ServerManager.instance
+    return LoginManager.instance
         .login(_emailTextController.text, _passwordTextController.text);
   }
 }
