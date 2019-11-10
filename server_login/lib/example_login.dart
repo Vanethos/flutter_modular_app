@@ -1,4 +1,4 @@
 library example_login;
 
-export 'src/login.dart';
+export 'src/server_login.dart';
 

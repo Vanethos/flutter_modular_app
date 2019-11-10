@@ -39,7 +39,7 @@ packages:
   example_login:
     dependency: "direct main"
     description:
-      path: server_login
+      path: firebase_login
       relative: true
     source: path
     version: "1.0.0+1"

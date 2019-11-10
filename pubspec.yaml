@@ -25,7 +25,7 @@ dependencies:
   cupertino_icons: ^0.1.2
 
   example_login:
-    path: ./server_login
+    path: ./firebase_login
 
 dev_dependencies:
   flutter_test:
